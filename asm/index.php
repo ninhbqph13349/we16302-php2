@@ -1,6 +1,13 @@
 <?php
-
 require_once './vendor/autoload.php';
+
+use App\Controllers\LoginController;
+use App\Controllers\DashboardController;
+use App\Controllers\QuizController;
+use App\Controllers\SubjectController;
+use App\Controllers\QuestionController;
+
+
 $url = isset($_GET['url']) ? $_GET['url'] : "/";
 \App\Helpers\Route::run($url);
 // switch ($url) {
